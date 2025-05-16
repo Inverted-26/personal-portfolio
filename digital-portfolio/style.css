@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+
+* {
+    /* border: solid transparent; */
+    margin: 0;
+    padding: 0;
+    scrollbar-color: transparent transparent;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* overflow-wrap: break-word; */
+    /* overflow-y: hidden; */
+    /* overflow: scroll;s */
+}
+
+body {
+    /* background-color: aliceblue; */
+    height: 100vh;
+    background-image: linear-gradient(180deg, #d0e8ff, #d6fff4);
+    scrollbar-color: transparent transparent;
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow: scroll;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    border: solid purple;
+    margin: auto;
+    width: 50vw;
+    /* height: 95vh; */
+}
+
+.main-display {
+    border: solid pink;
+    margin: auto;
+}
+
+.portfolio-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    font-family: "Satisfy", cursive;
+}
+
+.left-side-container {
+    border: solid magenta;
+    width: 20vw;
+    height: 100%;
+    float: left;
+}
+
+.right-side-container {
+    border: solid red;
+    width: 20vw;
+    height: 100%;
+    float: right;
+}
+
+.top-cloud-gif {
+    border: solid orange;
+    width: 20vw;
+}
+
+.bottom-cloud-gif {
+    border: solid lime;
+    width: 20vw;
+    margin-top: 26%;
+}
+
+.first-project-container {
+    border: solid blue;
+    align-content: center;
+    text-align: center;
+}
+
+.project-title {
+    margin-left: 7%;
+    font-family: "Courgette", cursive;
+    color: white;
+    text-align: left;
+    /* color: #435e9d; */
+}
+
+.project-img {
+    border: solid 7px white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#voting-time {
+    height: 45vh;
+    width: 45vw;
+}
