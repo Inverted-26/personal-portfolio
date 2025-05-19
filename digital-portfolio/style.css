@@ -8,33 +8,52 @@
     scrollbar-color: transparent transparent;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: "Courgette", cursive;
     /* overflow-wrap: break-word; */
     /* overflow-y: hidden; */
     /* overflow: scroll;s */
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     /* background-color: aliceblue; */
     height: 100vh;
-    background-image: linear-gradient(180deg, #d0e8ff, #d6fff4);
+    background-image: linear-gradient(180deg, #d0e4ff, #d6fbff);
     scrollbar-color: transparent transparent;
     scroll-behavior: smooth;
     overflow-wrap: break-word;
     overflow-x: hidden;
     overflow: scroll;
     background-repeat: no-repeat;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 .main-container {
     border: solid purple;
     margin: auto;
-    width: 50vw;
+    width: 55vw;
+    /* text-align: center; */
     /* height: 95vh; */
 }
 
-.main-display {
-    border: solid pink;
-    margin: auto;
+.showcase-display {
+    border: solid violet;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+    /* text-align: center; */
+    /* margin: auto; */
 }
 
 .portfolio-title {
@@ -47,34 +66,30 @@ body {
 }
 
 .left-side-container {
-    border: solid magenta;
-    width: 20vw;
-    height: 100%;
+    border: solid red;
+    width: 19%;
+    height: 325vh;
     float: left;
 }
 
 .right-side-container {
-    border: solid red;
-    width: 20vw;
-    height: 100%;
+    border: solid fuchsia;
+    width: 19%;
+    height: 325vh;
     float: right;
+    text-align: right;
 }
 
 .top-cloud-gif {
-    border: solid orange;
-    width: 20vw;
+    border: solid blue;
+    width: 17vw;
 }
 
 .bottom-cloud-gif {
-    border: solid lime;
-    width: 20vw;
-    margin-top: 26%;
-}
-
-.first-project-container {
-    border: solid blue;
-    align-content: center;
-    text-align: center;
+    border: solid blueviolet;
+    width: 17vw;
+    /* margin-top: 650%; */
+    margin-top: 250vh;
 }
 
 .project-title {
@@ -85,12 +100,67 @@ body {
     /* color: #435e9d; */
 }
 
-.project-img {
-    border: solid 7px white;
-    border-radius: 5px 5px 5px 5px;
+.showcase-container {
+    /* border: solid lightseagreen; */
+    /* border-radius: 10px; */
+    width: 54.5vw;
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
 
-#voting-time {
+.showcase {
+    border: solid 10px white;
     height: 45vh;
+    width: 50vw;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+.project-info {
+    border: solid transparent;
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 48vw;
+    color: #8abded;
+    /* color: white; */
+    /* float: right; */
+    /* width: 12vw; */
+}
+
+/* THE INDIVIDUAL SHOWCASES */
+#og-voting-time {
+    border: solid 10px white;
+    height: 50vh;
     width: 45vw;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+#productivity-project {
+    border: solid 10px white;
+    height: 50vh;
+    width: 25vw;
+    border-radius: 30px;
+    position: relative;
+    margin-left: 6.5%;
+    margin-top: 0.5%;
+    float: left;
+    clear: both;
+    /* text-align: center; */
+}
+
+#productivity-project-info {
+    float: right;
+    border: solid blue;
+    width: 16vw;
+    position: relative;
+    margin-right: 7%;
+    /* height: 30vh; */
 }
