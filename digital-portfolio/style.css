@@ -9,32 +9,21 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "Courgette", cursive;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    }
-  20% {
-    opacity: 1;
-    }
-  80% {
-    opacity: 1;
-    }
-  100% {
-    opacity: 0;
-    }
+    animation: fadeInAnimation ease 2s;
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
-
+    25% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
     }
 }
+
 
 @keyframes rockingAnimation {
     0% {
@@ -48,7 +37,18 @@
     }
     100% {
         transform: rotate(0deg);
-    }
+    };
+};
+
+@keyframes showcaseAnimation {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  };
 }
 
 body {
@@ -61,10 +61,10 @@ body {
     overflow-x: hidden;
     overflow: scroll;
     background-repeat: no-repeat;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: both; */
 }
+
 
 .main-container {
     border: solid transparent;
@@ -79,11 +79,9 @@ body {
     padding: 0;
     margin: 0;
     margin-bottom: 5%;
-    /* text-align: center; */
-    /* margin: auto; */
-    /* animation: fadeInOut linear;
-    animation-timeline: scroll();
-    animation-range: entry 50% exit 100%; */
+    animation: showcaseAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .portfolio-title {
@@ -187,6 +185,9 @@ body {
     margin: auto;
     margin-top: 0.5%;
     text-align: center;
+    animation: showcaseAnimation linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .project-info {
@@ -204,13 +205,32 @@ body {
     color: white;
     line-height: 200%;
     margin: auto;
+    margin-left: 5%;
 }
 
 .social-links-container {
     border: solid transparent;
-    margin-bottom: 3%;
+    width: 10vw;
+    display: inline-block;
+    /* margin-bottom: 3%; */
     /* margin: auto; */
-    text-align: center;
+    /* text-align: center; */
+}
+
+.certifications-container {
+    border: solid transparent;
+    color: white;
+    width: 30vw;
+    float: right;
+    margin-right: 3%;
+    line-height: 200%;
+    /* display: inline-block; */
+}
+
+.about-container {
+    border: solid transparent;
+    height: 15vh;
+    margin-left: 7%;
 }
 
 /* THE INDIVIDUAL SHOWCASES */
@@ -234,7 +254,7 @@ body {
     margin-left: 6.5%;
     margin-top: 0.5%;
     float: left;
-    clear: both;
+    /* clear: both; */
     /* text-align: center; */
 }
 
